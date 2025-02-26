@@ -21,6 +21,13 @@ Both methods integrate their beta predictions into the SEIR model to simulate in
 - **seir_model_multiple_beta_trajectories.py**: Simulates the SEIR model using multiple Beta trajectories.
 - **seir_model_infected_population_analysis.py**: Analyzes the infected population and computes percentiles over time.
 - **seir_model_percentile_analysis_10_seeds.py**: Similar analysis for a smaller subset of seeds.
+- **seir_model_prediction_functions.py: Contains functions for loading data, training the model, and making
+predictions.
+· **seir_model_prediction_10_seeds.py: Similar to the above but focuses on a smaller subset of seeds.
+. **seir_model_shifted_beta_prediction.py: Implements a shifted prediction model for Beta values based on
+previous infection rates.
+. **beta_values_visualization.py: Visualizes Beta values for multiple seeds.
+· **beta_values_analysis.py: Analyzes and plots Beta values from the dataset.
 
 ### LSTM-Based Prediction and Simulation (New)
 
