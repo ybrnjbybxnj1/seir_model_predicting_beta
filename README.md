@@ -27,7 +27,7 @@ predictions.
 - **seir_model_shifted_beta_prediction.py**: Implements a shifted prediction model for Beta values based on
 previous infection rates.
 - **beta_values_visualization.py**: Visualizes Beta values for multiple seeds.
-   **beta_values_analysis.py**: Analyzes and plots Beta values from the dataset.
+- **beta_values_analysis.py**: Analyzes and plots Beta values from the dataset.
 
 ### LSTM-Based Prediction and Simulation (New)
 
