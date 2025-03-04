@@ -53,8 +53,13 @@ Both methods integrate their beta predictions into the SEIR model to simulate in
   #### Main execution block
   - Orchestrates the training, evaluation, and visualization workflows with configurable parameters (e.g., data directories, window size, number of seeds, simulation start day).
 
-### New files added
+### Converters
 
 - **abm_to_seir_data_converter.py**: converts agent-based model (ABM) data into SEIR format, calculating compartments (S, E, I, R) and the transmission rate (Beta) for multiple seeds.
 - **data_daily_to_weekly_data_converter.py**: processes daily SEIR data files into weekly summaries, selecting every 7th row for analysis.
 - **real_data_converter.py**: fits the SEIR model to real-world infection data, optimizing parameters (Beta, Sigma, Gamma) and visualizing the results.
+
+### New files added
+
+- **plot_rmse_distribution.py**: visualizes the distribution of RMSE values for Infections (I) and Beta predictions across multiple seeds.
+- **polynomial_features_on_all_6_features_with_rmse.py**: implements a polynomial regression model to predict Beta values using six features: day, S, E, I, R, and prev_I; visualizes the RMSE for both Infections and Beta predictions.
